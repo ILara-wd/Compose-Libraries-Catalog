@@ -1,4 +1,4 @@
-# 🚀 Jetpack Compose UI Libraries -- Catálogo Open-Source 2025
+# 🚀 Librerías Jetpack Compose – Componentes UI (2025) 📚
 
 Colección curada de librerías **open-source** para Jetpack Compose que
 incluyen componentes como **botones**, **inputs**, **charts**,
@@ -7,165 +7,74 @@ Este repositorio sirve como referencia para desarrolladores que buscan
 **componentes modernos, mantenidos y listos para producción** en
 Compose.
 
-## 📌 Contenido
+# 🧩 1. Librerías “todo en uno” (botones, inputs, UI avanzada)
 
--   Tabla comparativa
--   Librerías por categoría
--   Cómo elegir la librería adecuada
--   Licencias
--   Contribuir
+### JetCo
+- **Componentes:** botones animados, switches, charts (pie, bar, grouped), tarjetas, steppers, inputs.
+- **Ventajas:** completa, multiplataforma (KMP), muy personalizable.
+- **GitHub:** https://github.com/developerchunk/JetCo
 
-## 📦 Tabla comparativa
+### Lumo UI
+- **Componentes:** botones, text fields, sliders, chips, snackbars, diálogos, layouts.
+- **Ventajas:** genera código directamente en tu proyecto; ideal para crear tu design system.
+- **GitHub:** https://github.com/nomanr/lumo-ui
 
-  ------------------------------------------------------------------------------------------------------------------------------
-  Librería                 Componentes     Multiplataforma     Licencia    Repositorio
-  ------------------------ --------------- ------------------- ----------- -----------------------------------------------------
-  **JetCo**                Botones,        ✔️ KMP (Android +   Apache 2.0  https://github.com/developerchunk/JetCo
-                           switches,       Desktop)                        
-                           cards,                                          
-                           steppers,                                       
-                           charts                                          
+# 📊 2. Librerías de charts / visualización de datos
+### compose-charts (bytebeats)
+- **Gráficos:** líneas, barras, pie, área, radar.
+- **Ventajas:** multiplataforma (Compose Desktop/Web), ligera.
+- **GitHub:** https://github.com/bytebeats/compose-charts
 
-  **Lumo UI**              Botones,        ❌ Android          MIT         https://github.com/nomanr/lumo-ui
-                           inputs, chips,                                  
-                           sliders,                                        
-                           diálogos                                        
+### JetChart
+- **Gráficos:** líneas, barras, donut, gauge.
+- **Ventajas:** animaciones, API declarativa, útil para dashboards.
+- **GitHub:** https://github.com/fracassi-marco/JetChart
 
-  **compose-charts         Line, bar, pie, ✔️ Compose          Apache 2.0  https://github.com/bytebeats/compose-charts
-  (bytebeats)**            radar, área     Multiplatform                   
+### Charts (tehras)
+- **Gráficos:** bar, line, pie.
+- **Ventajas:** sencillo, fácil de integrar.
+- **GitHub:** https://github.com/tehras/charts
 
-  **JetChart**             Line, bar,      ❌ Android          Apache 2.0  https://github.com/fracassi-marco/JetChart
-                           donut, gauge                                    
+# 🎨 3. Librerías de estilos y visuales avanzados
 
-  **Charts (tehras)**      Bar, line, pie  ❌ Android          Apache 2.0  https://github.com/tehras/charts
+### Neumorphic-Compose
+- **Estilo:** neumorfismo (sombras suaves, efectos de relieve).
+- **Ventajas:** apariencia moderna y distintiva; fácil de aplicar.
+- **GitHub:** https://github.com/CuriousNikhil/neumorphic-compose
 
-  **Neumorphic-Compose**   Estilos         ❌ Android          Apache 2.0  https://github.com/CuriousNikhil/neumorphic-compose
-                           neumórficos                                     
+### Compose Shimmer
+- **Efectos:** shimmer placeholders para estados de carga.
+- **Ventajas:** multiplataforma, simple.
+- **GitHub:** https://github.com/valentinilk/compose-shimmer
 
-  **Compose Shimmer**      Shimmer,        ✔️ Multiplataforma  MIT         https://github.com/valentinilk/compose-shimmer
-                           skeleton                                        
-                           loaders                                         
+# 🗺️ 4. Librerías específicas de interfaz avanzada
 
-  **MapCompose**           Mapas,          ❌ Android          MIT         https://github.com/p-lr/MapCompose
-                           marcadores,                                     
-                           rutas, tiles                                    
+### MapCompose
+- **Componentes:** mapas custom, marcadores, rutas, zoom avanzado.
+- **Ventajas:** rápido, ideal para mapas offline o tiles propios.
+- **GitHub:** https://github.com/p-lr/MapCompose
 
-  **JellyFab**             FAB animado     ❌ Android          MIT         https://www.reddit.com/r/JetpackCompose
-                           tipo "gel"                                      
+### JellyFab
+- **Componentes:** FAB elástico con animaciones físicas (tipo “gel”).
+- **Ventajas:** ideal para UIs creativas y animadas.
+- **GitHub:** https://www.reddit.com/r/JetpackCompose/comments/1ovgsda
 
-  **Accompanist (Google)** Pagers,         ❌ Android          Apache 2.0  https://github.com/google/accompanist
-                           permisos,                                       
-                           placeholders,                                   
-                           animaciones                                     
+# 🏗️ 5. Librerías esenciales complementarias (Google y comunidad)
 
-  **Showkase**             Catálogo visual ❌ Android          Apache 2.0  https://github.com/airbnb/Showkase
-                           automático de                                   
-                           composables                                     
+### Google Accompanist
+- **Componentes y utilidades:** pagers, permisos, placeholders, animaciones.
+- **Ventajas:** mantenida por Google, llena huecos antes de que Compose los soporte nativamente.
+- **GitHub:** https://github.com/google/accompanist
 
-  **Composive**            UI responsiva,  ✔️ Multiplataforma  Apache 2.0  https://github.com/Gursimarsingh12/Composive
-                           breakpoints                                     
-  ------------------------------------------------------------------------------------------------------------------------------
+### Showkase
+- **Función:** catálogo automático de tus composables.
+- **Ventajas:** ideal para design systems grandes.
+- **GitHub:** https://github.com/airbnb/Showkase
 
-## 🧩 Librerías por categoría
-
-### 🎛️ Componentes generales
-
-#### JetCo
-
--   Botones, cards, steppers, switches, charts\
--   Muy completa\
--   ✔️ Multiplataforma\
--   Apache 2.0
-
-#### Lumo UI
-
--   Botones, inputs, sliders, chips\
--   Genera código\
--   ❌ Android\
--   MIT
-
-### 📊 Charts
-
-#### compose-charts
-
--   Line, bar, pie, radar\
--   ✔️ Multiplataforma\
--   Apache 2.0
-
-#### JetChart
-
--   Charts animados\
--   ❌ Android\
--   Apache 2.0
-
-#### Charts (tehras)
-
--   Sencilla y ligera\
--   ❌ Android\
--   Apache 2.0
-
-### 🎨 Estilos avanzados
-
-#### Neumorphic-Compose
-
--   Efecto neumórfico\
--   ❌ Android\
--   Apache 2.0
-
-#### Compose Shimmer
-
--   Shimmer animado\
--   ✔️ Multiplataforma\
--   MIT
-
-### 🗺️ Mapas
-
-#### MapCompose
-
--   Mapas completos\
--   ❌ Android\
--   MIT
-
-### ⚡ Animaciones creativas
-
-#### JellyFab
-
--   FAB animado\
--   ❌ Android\
--   MIT
-
-### 🧰 Utilidades
-
-#### Accompanist
-
--   Pagers, permisos, animaciones\
--   ❌ Android\
--   Apache 2.0
-
-#### Showkase
-
--   Catálogo de composables\
--   ❌ Android\
--   Apache 2.0
-
-#### Composive
-
--   UI responsiva\
--   ✔️ Multiplataforma\
--   Apache 2.0
-
-## 🧭 Cómo elegir la librería adecuada
-
--   **UI completa:** JetCo\
--   **Charts multiplataforma:** compose-charts\
--   **Charts Android avanzados:** JetChart\
--   **Design system propio:** Lumo UI\
--   **Shimmer / skeleton:** Compose Shimmer\
--   **Estilo único:** Neumorphic-Compose\
--   **Mapas:** MapCompose\
--   **Oficial extendido:** Accompanist\
--   **Catálogo composables:** Showkase\
--   **Apps multiplataforma:** Composive
+### Composive
+- **Función:** UI responsiva; layouts adaptativos.
+- **Ventajas:** esencial para móvil/tablet/desktop.
+- **GitHub:** https://github.com/Gursimarsingh12/Composive
 
 ## 📄 Licencias
 
